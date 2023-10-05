@@ -13,9 +13,7 @@
 <ul>
   <% @articles.each do |article| %>
     <li>
-      <a href="/articles/<%= article.id %>">
-        <%= article.title %>
-      </a>
+      <%= link_to article.title, article %> <%# link_to [link's text] [link's destination] %>
     </li>
   <% end %>
 </ul>
