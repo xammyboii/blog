@@ -1,0 +1,24 @@
+<%#
+  # Name: Xam Abados
+  # Course: WEBD-3008 Full-Stack Web Development
+  # Date Created: 10.04.2023
+  # Project: Challenge 4 - Blog
+%>
+
+<h1>New Article</h1>
+
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
